@@ -1,5 +1,4 @@
 /*global chrome*/
-// Todo ask user which account to sign in with before copy
 (async function () {
 	const constructDiv = (url, array) => {
 		let r = `<div style="margin-top: -5px;margin-bottom: 5px;font-size: 16px;font-weight: bold;">Click to copy with: </div>`;

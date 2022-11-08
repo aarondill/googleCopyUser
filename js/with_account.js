@@ -1,5 +1,4 @@
 /*global chrome*/
-//todo, let user know current account
 (async function () {
 	const fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js");
 	const accounts = (await import(fileUrlAccountsJS)).default;
