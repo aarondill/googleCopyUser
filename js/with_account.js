@@ -1,7 +1,8 @@
+/*global chrome*/
 //todo, let user know current account
-const { href } = location;
-const matches = href.match(
-	/https:\/\/docs\.google\.com\/[a-z]+\/u\/(?<u>\d).+/
-);
-const u = matches.groups.u;
-console.log(`with account number ${u}(the ${Number(u) + 1}rd account)!`);
+const fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js");
+const domInjectUrl = chrome.runtime.getURL(".with_account_inject.js");
+const script = document.createElement("script");
+script.setAttribute("data-url", fileUrlAccountsJS);
+script.src = domInjectUrl;
+document.body.prepend(script);
