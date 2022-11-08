@@ -25,7 +25,7 @@
 	],
 	"web_accessible_resources": [
 		{
-			"resources": [".accounts.js", ".with_account_inject.js"],
+			"resources": [".accounts.js"],
 			"matches": ["*://docs.google.com/*"]
 		}
 	]
