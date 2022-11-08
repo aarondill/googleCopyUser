@@ -11,4 +11,4 @@ In the future, if i can figure out how to, I may change this to automatically ad
 export default ["username0", "username1", "username2", "etc."];
 ```
 
-This extension was made for personal use, but since it's on github anyways, if it helps you, enjoy!
+## This extension was made for personal use, but since it's on github anyways, if it helps you, enjoy!
