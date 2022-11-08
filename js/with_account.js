@@ -2,8 +2,7 @@
 //todo, let user know current account
 (async function () {
 	const fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js");
-	let accounts = await import(fileUrlAccountsJS);
-	accounts = accounts.default;
+	const accounts = (await import(fileUrlAccountsJS)).default;
 	const matches = location.href.match(
 		/https:\/\/docs\.google\.com\/[a-z]+\/u\/(?<u>\d).+/
 	);

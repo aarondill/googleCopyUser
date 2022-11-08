@@ -19,7 +19,7 @@
 		},
 		{
 			"matches": ["*://docs.google.com/document/d/*/copy*"],
-			"js": ["js/default.js"],
+			"js": ["js/without_account.js"],
 			"run_at": "document_idle"
 		}
 	],
