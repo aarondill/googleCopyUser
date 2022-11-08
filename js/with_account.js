@@ -1,2 +1,7 @@
 //todo, let user know current account
-console.log("with an account!");
+const { href } = location;
+const matches = href.match(
+	/https:\/\/docs\.google\.com\/[a-z]+\/u\/(?<u>\d).+/
+);
+const u = matches.groups.u;
+console.log(`with account number ${u}(the ${Number(u) + 1}rd account)!`);

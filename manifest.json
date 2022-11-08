@@ -22,5 +22,11 @@
 			"js": ["js/default.js"],
 			"run_at": "document_idle"
 		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["js/accounts.js"],
+			"matches": ["*://docs.google.com/document/*/copy"]
+		}
 	]
 }
