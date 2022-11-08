@@ -8,7 +8,7 @@
 			}
 			return r;
 		},
-		fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js"),
+		fileUrlAccountsJS = chrome.runtime.getURL("_accounts.js"),
 		accounts = (await import(fileUrlAccountsJS)).default,
 		urlUserRegex = /https:\/\/docs\.google\.com\/[a-z]+\/u\/(?<u>\d).+/,
 		matches = location.href.match(urlUserRegex),
