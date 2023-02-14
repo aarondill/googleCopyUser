@@ -5,7 +5,7 @@ This extension fixes that!
 
 ## just add your own \_accounts.js file, and recompile
 
-In the future, if i can figure out how to, I may change this to automatically add your a \_accounts.js file, or perhaps use localstorage to save users, but as of now, it is required to include a \_accounts.js in the main directory file formatted as follows:
+In the future, if i can figure out how to, I may change this to automatically add your a src/js/\_accounts.js file, or perhaps use localstorage to save users, but as of now, it is required to include a src/js/\_accounts.js in the main directory file formatted as follows:
 
 ```js
 export default ["username0", "username1", "username2", "etc."];
