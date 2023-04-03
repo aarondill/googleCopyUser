@@ -10,7 +10,8 @@
 		},
 		fileUrlAccountsJS = chrome.runtime.getURL("_accounts.js"),
 		accounts = (await import(fileUrlAccountsJS)).default,
-		urlUserRegex = /https:\/\/(?:docs|jamboard)\.google\.com\/[a-z]+\/u\/(?<u>\d).+/,
+		urlUserRegex =
+			/https:\/\/(?:docs|jamboard)\.google\.com\/[a-z]+\/u\/(?<u>\d).+/,
 		matches = location.href.match(urlUserRegex),
 		currentUser = accounts[matches?.groups.u ?? 0],
 		styleSheet = document.createElement("style"),
