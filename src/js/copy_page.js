@@ -1,14 +1,14 @@
 /*global chrome*/
 (async function () {
-	const constructDiv = (url, array) => {
+	function constructDiv(url, array) {
 		if (url[0].match(/\/u\/\d$/)) url[0] = url[0].slice(0, -4);
 		let r = `<div id="injected-heading">Click to copy with: </div>`;
 		for (let i = 0; i < array.length; i++) {
 			r += `<div><a class="injected-a" href="${url[0]}/u/${i}/d/${url[1]}">${array[i]}</a></div>`;
 		}
 		return r;
-	};
-	const fileUrlAccountsJS = chrome.runtime.getURL("_accounts.js");
+	}
+	const fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js");
 	const accounts = await import(fileUrlAccountsJS).then(i => i.default);
 	const urlUserRegex = /https:\/\/[a-z]+\.google\.com\/[a-z]+\/u\/(?<u>\d).+/i;
 	const matches = location.href.match(urlUserRegex);

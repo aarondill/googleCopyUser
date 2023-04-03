@@ -13,14 +13,14 @@
 	"permissions": ["tabs", "activeTab"],
 	"content_scripts": [
 		{
-			"matches": ["*://docs.google.com/*/copy*"],
+			"matches": ["*://*.google.com/*/copy*"],
 			"js": ["js/copy_page.js"],
 			"run_at": "document_idle"
 		}
 	],
 	"web_accessible_resources": [
 		{
-			"resources": ["_accounts.js"],
+			"resources": [".accounts.js"],
 			"matches": ["*://*.google.com/*"]
 		}
 	]

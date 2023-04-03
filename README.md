@@ -3,7 +3,7 @@
 if you have many user accounts, when copying files through links, it is sometimes difficult to change accounts and decide which account to copy to.
 This extension fixes that!
 
-## just add your own \_accounts.js file, and recompile
+## just add your own src/\_accounts.js file, and recompile
 
 In the future, if i can figure out how to, I may change this to automatically add your a src/js/\_accounts.js file, or perhaps use localstorage to save users, but as of now, it is required to include a src/js/\_accounts.js in the main directory file formatted as follows:
 
