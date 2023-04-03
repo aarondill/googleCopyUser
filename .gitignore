@@ -1,3 +1,3 @@
 dist
 *.pem
-src/.accounts.js
+src/accounts.js

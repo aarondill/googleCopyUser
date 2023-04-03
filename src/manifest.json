@@ -20,7 +20,7 @@
 	],
 	"web_accessible_resources": [
 		{
-			"resources": [".accounts.js"],
+			"resources": ["accounts.js"],
 			"matches": ["*://*.google.com/*"]
 		}
 	]

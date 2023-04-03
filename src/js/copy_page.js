@@ -8,7 +8,7 @@
 		}
 		return r;
 	}
-	const fileUrlAccountsJS = chrome.runtime.getURL(".accounts.js");
+	const fileUrlAccountsJS = chrome.runtime.getURL("accounts.js");
 	const accounts = await import(fileUrlAccountsJS).then(i => i.default);
 	const urlUserRegex = /https:\/\/[a-z]+\.google\.com\/[a-z]+\/u\/(?<u>\d).+/i;
 	const matches = location.href.match(urlUserRegex);
