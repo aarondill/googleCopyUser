@@ -15,7 +15,7 @@ fi
 cmds=(
   "${GOOGLE_CHROME:-}" # allow user to override
   google-chrome google-chrome-stable chromium
-  chromium-browser vivaldi brave
+  chromium-browser vivaldi brave opera
 )
 chrome=
 for f in "${cmds[@]}"; do
