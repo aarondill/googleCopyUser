@@ -1,27 +1,21 @@
 {
-	"manifest_version": 3,
-	"name": "Google copy user choice",
-	"version": "1",
-	"description": "pick user signin on copy document prompt",
-	"icons": {
-		"48": "images/icon48.png",
-		"64": "images/icon64.png",
-		"128": "images/icon128.png",
-		"16": "images/icon16.png"
-	},
-	"host_permissions": ["*://*.google.com/*/copy"],
-	"permissions": ["tabs", "activeTab"],
-	"content_scripts": [
-		{
-			"matches": ["*://*.google.com/*/copy*"],
-			"js": ["js/copy_page.js"],
-			"run_at": "document_idle"
-		}
-	],
-	"web_accessible_resources": [
-		{
-			"resources": ["accounts.js"],
-			"matches": ["*://*.google.com/*"]
-		}
-	]
+  "manifest_version": 3,
+  "name": "Google copy user choice",
+  "version": "1",
+  "description": "pick user signin on copy document prompt",
+  "icons": {
+    "48": "images/icon48.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png",
+    "16": "images/icon16.png"
+  },
+  "host_permissions": ["*://*.google.com/*/copy"],
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*/copy*"],
+      "js": ["./accounts.js", "js/copy_page.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
